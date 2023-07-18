@@ -1,0 +1,161 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+
+.custom-width {
+    margin-left: 10px;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+#b {
+    background-color: #f5f5f5;
+    border-width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+
+    margin-left: 25%;
+}
+
+button {
+    margin-top: 10px;
+    margin-left: 40%;
+    border-radius: 2px;
+    height: 100px;
+    margin-top: 100px;
+
+}
+
+.btn-long {
+    width: 25%;
+
+}
+
+
+
+body {
+    background-color: black;
+}
+
+.im {
+    margin-left: 40%;
+    margin-top: 10px;
+    width: 10%;
+    height: 20%;
+    margin-top: 60px;
+}
+
+#p1 {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 20%;
+    height: 20%;
+    margin-top: 50px;
+    font-weight: bold;
+    animation: player1 10s infinite alternate-reverse;
+    font-size: 30px;
+}
+
+#p2 {
+    margin-left: 80%;
+    margin-top: 10px;
+    width: 20%;
+    height: 20%;
+    margin-top: 0px;
+    font-weight: bold;
+    animation: player2 10s infinite alternate-reverse;
+    font-size: 30px;
+}
+
+.winner-display {
+    margin-left: 40%;
+    margin-top: 10px;
+    width: 40%;
+    height: 20%;
+    margin-top: 50px;
+}
+
+.text-center{
+    width: 400px;
+    margin-left: 40%;
+    color:goldenrod;
+    margin-top: 20px;
+}
+
+h2{
+    margin-left: 50%;
+    margin-top: 10px;
+    width: 40%;
+    height: 20%;
+    margin-top: 50px;
+}
+
+.btn-primary{
+   background-color:goldenrod;
+   color: black;
+   font-style: italic;
+   font-weight: bolder;
+   font-size: larger;
+   animation: sum 10s infinite;
+
+}
+@keyframes sum {
+    0%{border-color:white;
+
+        color:black;
+
+    }
+    25%{border-color:goldenrod;
+        color: red;
+    }
+    50%{border-color:skyblue;
+
+        color:black;
+    }
+    100%{border-color:goldenrod;
+        color:grey;
+    }
+}
+@keyframes player1 {
+    0%{border-color:white;
+
+        color:black;
+        margin-left: 20px;
+
+    }
+    25%{border-color:goldenrod;
+        color:darkblue;
+        margin-left: 100px;
+    }
+    50%{border-color:skyblue;
+
+        color:black;
+        margin-left: 200px;
+    }
+    100%{border-color:goldenrod;
+        color:blue;
+        margin-left: 300px;
+    }
+
+}
+@keyframes player2{
+    0%{border-color:white;
+
+        color:black;
+        margin-left: 80%;
+
+    }
+    25%{border-color:goldenrod;
+        color:darkblue;
+        margin-left: 70%;
+    }
+    50%{border-color:skyblue;
+
+        color:black;
+        margin-left: 60%;
+    }
+    100%{border-color:goldenrod;
+        color:blue;
+        margin-left: 50%;
+    }
+
+}

@@ -1,0 +1,22 @@
+
+  <!-- Rest of your app content -->
+
+  <h1 class="text-center  text-white ">Das Würfelspiel</h1>
+<div class="game-button-display" *ngIf="winner===''  ">
+  
+<button class="btn btn-primary  btn-long  h" (click)="getRandomNumberFromApi()"  [disabled]="!isUserturn"><span id="pl">Play</span></button>
+
+<div class="game-score-display">
+<button id="p1" class="btn btn-secondary " > your points: {{score1}}</button> <button id="p2" class="btn btn-secondary  "> CPU's points: {{score2}}</button> 
+
+</div>
+<app-dice [id]="randomNumber"></app-dice>
+</div>
+<div class="winner-display" *ngIf="winner!==''">
+<h2 class="text-center  text-white">{{winner}}</h2>
+<div id="pla">
+<button class="btn btn-primary  btn-long  h" (click)="resetGame()"><span >Play again</span></button>
+</div>
+</div>  
+ 
+ 
